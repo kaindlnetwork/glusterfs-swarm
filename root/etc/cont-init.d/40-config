@@ -5,6 +5,7 @@ echo "Setting correct permissions"
 # permissions
 touch /var/log/glusterfs/glusterd.log && \
     chown ${PUID:-911}:${PGID:-911} /var/log/glusterfs/glusterd.log
+mkdir /run/gluster/snaps    
 
 
 # run initial IP update
