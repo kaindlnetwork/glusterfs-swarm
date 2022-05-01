@@ -10,8 +10,8 @@ HEALTHCHECK CMD curl --fail http://localhost:80/ || exit 1
 # Dependencies for installing PPA repository and packages
 RUN apt-get update && \
     apt-get install -y \
-    software-properties-common
-    wget
+    software-properties-common \
+    wget \
     tzdata && rm -rf /var/lib/apt/lists/*
 
 RUN ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime && \
