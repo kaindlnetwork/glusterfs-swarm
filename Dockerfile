@@ -29,4 +29,4 @@ RUN apt-get update && \
 COPY /root /
 
 #VOLUME $MEDIA_DIR
-#EXPOSE $APP_PORT
+EXPOSE 24007-24008
