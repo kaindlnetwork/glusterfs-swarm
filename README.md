@@ -25,7 +25,9 @@ This image provides various versions that are available via tags. `main` tag usu
 | GLUSTER_VOL        | name of the gluster volume to expose       | vol0            | myvol0                                      |
 | GLUSTER_BRICK_PATH | Path of the local brick (mount)            | /gluster_volume | /bricks/brick0                              |
 | DEBUG=1            | Verbose mode                               | 0               |                                             |
-
+| PUID               | User/Group                                 | 1000            |                                             |
+| PGID               | User/Group                                 | 1000            |                                             |
+| TZ                 | Timezone                                   | Europe/Berlin   |                                             |
 
 ## Healthcheck
 
