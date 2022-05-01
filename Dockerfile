@@ -24,5 +24,7 @@ RUN wget -O - https://download.gluster.org/pub/gluster/glusterfs/9/rsa.pub | apt
 RUN apt-get update && \
     apt-get install -y glusterfs-server
 
+COPY /root /
+
 #VOLUME $MEDIA_DIR
 #EXPOSE $APP_PORT
