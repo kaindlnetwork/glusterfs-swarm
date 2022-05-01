@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
 exec 2>&1 \
-    s6-setuidgid 1000:1000 /usr/sbin/glusterfsd
+    s6-setuidgid ${PUID:-1000}:${PGID:-1000} /usr/sbin/glusterfsd
