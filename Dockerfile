@@ -12,7 +12,7 @@ RUN apt-get update && \
     apt-get install -y \
     software-properties-common \
     wget \
-    tzdata && rm -rf /var/lib/apt/lists/*
+    tzdata && rm -rf /var/lib/apt/lists/*    
 
 RUN ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
@@ -22,7 +22,9 @@ RUN wget -O - https://download.gluster.org/pub/gluster/glusterfs/9/rsa.pub | apt
 
 
 RUN apt-get update && \
-    apt-get install -y glusterfs-server && rm -rf /var/lib/apt/lists/*
+    apt-get install -y glusterfs-server && rm -rf /var/lib/apt/lists/* \
+    touch /var/log/glusterfs/glusterd.log \
+    chown 911:911 /var/log/glusterfs/glusterd.log
 
 COPY /root /
 
