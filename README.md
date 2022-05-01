@@ -1,5 +1,6 @@
-# mautrix-whatsapp
+[![kaindlglobalnetwork.de](https://raw.githubusercontent.com/kgncloud/docker-template/main/KAINDL_LogoDesign_B_orange_rgb.png)](https://kaindlglobalnetwork.de)
 
+# glusterfs-swarm
 
 
 The [Kaindl Network](https://kaindlglobalnetwork.de) team brings you another container release featuring:
@@ -17,8 +18,7 @@ This image provides various versions that are available via tags. `main` tag usu
 | :----: | --- |
 | main | Latest Release Version of this Container |
 
-Environment Variables
-=====================
+## Environment Variables
 | Name               | Description                                | Default         | Example                                     |
 |:------------------ |:------------------------------------------ |:--------------- |:------------------------------------------- |
 | SERVICE_NAME       | DNS name to query = discover peers         | gluster         | glusterfs-storage.default.svc.cluster.local |
