@@ -17,6 +17,16 @@ This image provides various versions that are available via tags. `main` tag usu
 | :----: | --- |
 | main | Latest Release Version of this Container |
 
+Environment Variables
+=====================
+| Name               | Description                                | Default         | Example                                     |
+|:------------------ |:------------------------------------------ |:--------------- |:------------------------------------------- |
+| SERVICE_NAME       | DNS name to query = discover peers         | gluster         | glusterfs-storage.default.svc.cluster.local |
+| GLUSTER_VOL        | name of the gluster volume to expose       | vol0            | myvol0                                      |
+| GLUSTER_BRICK_PATH | Path of the local brick (mount)            | /gluster_volume | /bricks/brick0                              |
+| DEBUG=1            | Verbose mode                               | 0               |                                             |
+
+
 ## Healthcheck
 
 This image has already a healtcheck included :D
