@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
 exec 2>&1 \
-    s6-setuidgid ${PUID:-911}:${PGID:-911} /usr/sbin/glusterd -p /var/run/glusterd.pid
+    s6-setuidgid ${PUID:-911}:${PGID:-911} /usr/sbin/glusterd
