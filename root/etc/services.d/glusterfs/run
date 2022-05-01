@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
 exec 2>&1 \
-    s6-setuidgid /usr/sbin/sshd.pam -D -e -p 2222
+    s6-setuidgid 1000:1000 /usr/sbin/sshd.pam -D -e -p 2222
